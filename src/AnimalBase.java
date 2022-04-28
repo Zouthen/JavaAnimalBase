@@ -80,8 +80,6 @@ public class AnimalBase {
         PrintStream out = new PrintStream("animals.csv");
         for (Animal animal : animals) {
             out.println(animal);
-
-            System.out.println(animal + " saved to the list");
         }
 
     }
