@@ -62,12 +62,12 @@ public class UserInterface {
     }
 
     private void list() {
-        System.out.println("List of all the animals");
+        System.out.println("\nList of all the animals");
         System.out.println("-----------------------");
         for (Animal animal : application.getAllAnimals()) {
             System.out.println(animal);
         }
-        System.out.println("There are " + application.getAnimalCount() + " animals in the list.");
+        System.out.println("There are " + application.getAnimalCount() + " animals in the list.\n");
     }
 
     private void filter() {
@@ -161,14 +161,14 @@ public class UserInterface {
     private void load() throws FileNotFoundException {
         System.out.println("Loading the database ...");
         application.loadDatabase();
-        System.out.println("Done!");
+        System.out.println("Done!\n");
     }
 
     private void save() throws FileNotFoundException {
         System.out.println("Saving the database ...");
         application.saveDatabase();
         System.out.println("Saving database completed succesfully");
-        System.out.println("You can now exit the application");
+        System.out.println("You can now exit the application\n");
     }
 
 }
